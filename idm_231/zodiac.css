@@ -1,0 +1,208 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: "caesar";
+    src: url(fonts/caesardressing-regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "crimson";
+    src: url(fonts/crimsontext-bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "ebgara";
+    src: url(fonts/ebgaramond-regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url(fonts/ubuntu-bold.ttf) format("truetype");
+}
+
+* {
+
+    color: white;
+}
+
+
+
+body {
+    background-image: url("icons/tar_bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #317557;
+    background-position: center;
+
+}
+
+.text {
+    background: #ED7372;
+    margin: 1rem 24rem;
+    padding: .5rem .1em;
+    font-family: "ebgara";
+    border-radius: 10px;
+}
+
+.title {
+    position: relative;
+    bottom: 13rem;
+    right:9rem;
+    font-size:70px;
+    font-family: "ebgara";
+}
+.title_resize {
+  width: 60%;
+  display: block;
+}
+
+.top {
+    text-align: center;
+
+}
+
+.char{
+    position: relative;
+    left: -2em;
+    bottom: 20px;
+    width: auto;
+    height: auto;
+}
+
+.name {
+    text-align: center;
+    font-family:"caesar";
+    font-size: 33px;
+    position: relative;
+    left: -23rem;
+    bottom: 20rem;
+  
+}
+
+.info {
+    position: relative;
+    width: 40%;
+    top: -18rem;
+    left: 12rem;
+    font-size: 16px;
+    font-family:"ubuntu";
+    color: #55514e;
+}
+
+#interactive {
+    display: flex;
+    justify-content: center;
+
+}
+.resize {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+.box_resize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 15rem;
+    width: 60rem;
+    height: 25rem;
+}
+
+.symbol {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+#enter {
+    cursor: pointer;
+    background: #173f39;
+    border-radius: 30px;
+    position: relative;
+    bottom: 10px;
+    
+  
+
+}
+
+#godDate {
+    background: #173f39;
+    border-radius: 5px;
+   
+
+}
+
+.bottom_flex {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ALL STUFF BELOW FOR HELP POPUP */
+
+.above {
+    text-align: center;
+    margin: auto 5rem;
+    padding: .5rem;
+}
+
+/* the help text box itself */
+.assistance {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ED7372;
+    background: #173f39;
+    padding: .5rem;
+}
+
+/* The help text box text and style */
+.assistance .helptext {
+    visibility: hidden;
+    width: 350px;
+    height: auto;
+    background-color: #4dc73a;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 10px;
+    position:absolute;
+    z-index: 1;
+    bottom: 45px;
+    right: -150px;
+   
+}
+.assistance .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1.5;
+    }
+}
+
+.assistanceResize {
+    width: 20%;
+}
+
+
+#content {
+    max-width: 1200px;
+    margin: auto;
+}
