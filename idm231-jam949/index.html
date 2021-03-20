@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hades Zodiac</title>
+    
+  <link rel="stylesheet" href="zodiac.css">
+</head>
+
+<body>
+    <div id="content">
+      <div class="top">
+            <img src="icons/title.png" class="title_resize">
+        <h1 class="title"> ZODIAC </h1>
+            <h2 class="text">Type in your birthday to find out which greek god you are:</h2>
+
+          
+
+        </div>
+  <div class="above">
+            <div class="assistance" onclick="myHelp()">Help
+                <span class="helptext" id="myPopup">Enter your birthday in the mm/dd/yyyy textbox by birth month, day, and year to aquire your zodiac, or click on one of the icons to see each zodiac at the bottom of the page!<br><img src="icons/vir_ic.png" class="assistanceResize"> <br>This is what the zodiac icon looks like! </span>
+            </div>
+        </div>
+        <div id="interactive">
+
+            <form action="">
+                
+                <input type="date" id="godDate" name="godDate">
+
+            </form>
+            
+            <button id="enter" onclick="enterGod();">BEGIN</button>
+         </div>
+    
+        <div class="box_resize">
+         <img id="god" src="icons/dialogue.png" alt="textbox"/>
+          <img id="grek" class="char" src="icons/placeholder.png" alt="home"/>
+       </div>
+      <div id="who" class="name">Greek God</div>
+          <div id="desc" class="info">Zodiac Description</div>
+          <img id="grek" class="char"/>
+      
+      <div class="bottom_flex">
+        
+        
+            <button class="symbol" id="aqu"><img src="icons/aqua_ic.png" class="resize"></button>
+            <button class="symbol" id="ari"><img src="icons/arie_ic.png" class="resize"></button>
+            <button class="symbol" id="can"><img src="icons/can_ic.png" class="resize"></button>
+            <button class="symbol" id="cap"><img src="icons/cap_ic.png" class="resize"></button>
+            <button class="symbol" id="gem"><img src="icons/gem_ic.png" class="resize"></button>
+            <button class="symbol" id="leo"><img src="icons/leo_ic.png" class="resize"></button>
+            <button class="symbol" id="lib"><img src="icons/lib_ic.png" class="resize"></button>
+            <button class="symbol" id="pis"><img src="icons/pisc_ic.png" class="resize"></button>
+            <button class="symbol" id="sag"><img src="icons/sag_ic.png" class="resize"></button>
+            <button class="symbol" id="sco"><img src="icons/scor_ic.png" class="resize"></button>
+            <button class="symbol" id="tau"><img src="icons/taur_ic.png" class="resize"></button>
+            <button class="symbol" id="vir"><img src="icons/vir_ic.png" class="resize"></button>
+       
+      </div>
+    </div>
+    <audio src="" id="soundFx">
+  <script src="zodiac.js"></script>
+</body>
+
+</html>
